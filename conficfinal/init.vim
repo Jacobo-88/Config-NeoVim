@@ -7,13 +7,14 @@ set expandtab
 set smartindent
 set rnu
 set numberwidth=1
+set clipboard=unnamedplus
 set nowrap
 set noswapfile
 set nobackup
 set incsearch
 set ignorecase
 set clipboard=unnamed
-set encoding=utf-8
+set encoding=UTF-8
 set showmatch
 set cursorline
 set termguicolors
@@ -53,6 +54,7 @@ Plug 'tpope/vim-rhubarb'
 Plug 'junegunn/gv.vim'
 
 "Functionality
+Plug 'timheap/linters.vim'
 Plug 'preservim/tagbar'
 Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -91,8 +93,8 @@ let g:gruvbox_contrast_dark='hard'
 colorscheme onedark
 
 "Utilice F5 para actualizar su editor con el archivo de configuración especifique aquí
-nmap <F5> :source ~/.config/nvim/init.vim<CR>
-vmap <F5> :source ~/.config/nvim/init.vim<CR>
+nmap <F5> :source % ~/.config/nvim/init.vim<CR>
+vmap <F5> :source % ~/.config/nvim/init.vim<CR>
 
 "inhabilita las teclas de flecha para navegar. Esto es muy útil cuando quieres adaptarse a 'hjkl'
 noremap <up> <nop>
