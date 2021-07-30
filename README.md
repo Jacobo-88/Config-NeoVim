@@ -1,4 +1,4 @@
-## Configuration for _NeoVim_ made by Juan Alejandro Marín Ruiz
+## Configuration for _NeoVim_ made by Code ToLsEr.
 
 ![](images/main-neovim-image.png)
 
